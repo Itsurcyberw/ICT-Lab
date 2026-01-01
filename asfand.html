@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asfandyar | Cyber Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: radial-gradient(circle at top, #001220, #000000);
+            font-family: 'Inter', sans-serif;
+            color: #e2e8f0;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .wrapper {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .glass-header {
+            background: rgba(255, 255, 255, 0.06);
+            padding: 35px;
+            border-radius: 20px;
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255,255,255,0.1);
+            text-align: center;
+            margin-bottom: 40px;
+            animation: fadeIn 1.5s ease;
+        }
+
+        .glass-header h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.8rem;
+            letter-spacing: 2px;
+            color: #00d4ff;
+            text-shadow: 0 0 8px #00d4ff;
+        }
+
+        .glass-header p {
+            margin-top: 10px;
+            color: #9ca3af;
+        }
+
+        .profile-section {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            margin-bottom: 45px;
+            flex-wrap: wrap;
+        }
+
+        .profile-section img {
+            width: 230px;
+            height: 230px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #00d4ff;
+            box-shadow: 0 0 25px #00d4ff;
+        }
+
+        .profile-info h2 {
+            font-family: 'Orbitron', sans-serif;
+            color: #00d4ff;
+            margin-bottom: 15px;
+            font-size: 1.7rem;
+        }
+
+        p {
+            line-height: 1.7;
+            color: #cbd5e1;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.05);
+            padding: 30px;
+            margin-bottom: 35px;
+            border-radius: 16px;
+            border: 1px solid rgba(255,255,255,0.08);
+            backdrop-filter: blur(15px);
+            animation: slideUp 1.2s ease;
+        }
+
+        .card h3 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: #00d4ff;
+        }
+
+        ul {
+            margin-left: 25px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: #cbd5e1;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th {
+            background: rgba(0, 212, 255, 0.3);
+            padding: 12px;
+            color: #fff;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid rgba(255,255,255,0.15);
+            color: #e2e8f0;
+        }
+
+        tr:nth-child(even) {
+            background: rgba(255,255,255,0.05);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            background: #00d4ff;
+            border-radius: 8px;
+            color: #000;
+            text-decoration: none;
+            font-weight: 600;
+            font-family: 'Orbitron', sans-serif;
+            margin-top: 20px;
+            transition: 0.3s ease;
+            box-shadow: 0 0 15px #00d4ff;
+        }
+
+        .btn:hover {
+            background: white;
+            transform: translateY(-3px);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(-20px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+
+        @keyframes slideUp {
+            from {opacity: 0; transform: translateY(20px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <div class="glass-header">
+        <h1>CYBER PORTFOLIO</h1>
+        <p>Digital Forensics • Ethical Hacking • Security Enthusiast</p>
+    </div>
+
+    <div class="profile-section">
+        <img src="asfand.jpg" alt="profile">
+
+        <div class="profile-info">
+            <h2>M. ASFANDYAR ARSHAD</h2>
+            <p>A passionate learner exploring Cyber Forensics, Ethical Hacking, and digital investigations.  
+            Enthusiastic about understanding vulnerabilities and mastering cybersecurity tools.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>ABOUT ME</h3>
+        <p>
+            Hello! I'm <b>M. Asfandyar Arshad</b>, a beginner in Cyber Forensics fascinated by digital clues,
+            vulnerabilities, and defense mechanisms. I'm pursuing my Bachelor's in Cyber Forensics and
+            Security at Air University. My dream is to become a professional ethical hacker and help secure the digital world.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>HOBBIES</h3>
+        <ul>
+            <li>Playing CTFs</li>
+            <li>Exploring Kali Linux tools</li>
+            <li>Finding new vulnerabilities</li>
+            <li>Physical Games: Football,Basketball,Badminton</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>EDUCATION</h3>
+
+        <table>
+            <tr>
+                <th>Qualification</th>
+                <th>Institution</th>
+                <th>Year</th>
+            </tr>
+
+            <tr>
+                <td>Matric</td>
+                <td>Army Public School & College FF Campus ATD</td>
+                <td>2023</td>
+            </tr>
+
+            <tr>
+                <td>Intermediate</td>
+                <td>Army Public School & College FF Campus ATD</td>
+                <td>2025</td>
+            </tr>
+
+            <tr>
+                <td>Bachelor's in Cyber Forensics & Security</td>
+                <td>Air University</td>
+                <td>2029</td>
+            </tr>
+        </table>
+
+        <a class="btn" href="https://www.realmadrid.com/en-US" target="_blank">Visit My Favorite Website</a>
+    </div>
+
+    <footer>© 2025 Cyber Portfolio. All Rights Reserved.</footer>
+
+</div>
+
+</body>
+</html>

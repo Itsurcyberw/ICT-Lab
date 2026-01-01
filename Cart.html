@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Crochet Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a> | 
+        <a href="Cap.html">Shop Caps</a> | 
+        <a href="Cart.html">🛒 Cart (<span id="cartCount">0</span>)</a>
+    </nav>
+
+    <section class="cart-section">
+        <h2>Your Shopping Cart</h2>
+        <p class="section-description">Review your items below and proceed to checkout</p>
+        
+        <div id="cartList" class="cart-items">
+            <p>Your cart is empty. <a href="Cap.html">Continue shopping</a></p>
+        </div>
+
+        <div class="cart-summary">
+            <h3 id="totalPrice">Total: PKR 0</h3>
+            <div class="cart-actions">
+                <button class="btn" onclick="window.location.href='Cap.html'">Continue Shopping</button>
+                <button class="btn clear-btn" onclick="clearCart()">Clear Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Handmade Crochet Hub. All rights reserved. | Made with ❤️</p>
+    </footer>
+
+    <script>
+        function loadCart() {
+            let cart = JSON.parse(localStorage.getItem('crochetCart')) || [];
+            let list = document.getElementById('cartList');
+            let total = 0;
+
+            if (cart.length === 0) {
+                list.innerHTML = '<p class="empty-cart">Your cart is empty. <a href="Cap.html">Continue shopping</a></p>';
+            } else {
+                list.innerHTML = '<table class="cart-table"><thead><tr><th>Product</th><th>Price</th><th>Action</th></tr></thead><tbody>';
+                cart.forEach((item, index) => {
+                    total += item.price;
+                    list.innerHTML += `<tr class="cart-item"><td>${item.name}</td><td>PKR ${item.price.toLocaleString()}</td><td><button class="remove-btn" onclick="removeItem(${index})">Remove</button></td></tr>`;
+                });
+                list.innerHTML += '</tbody></table>';
+            }
+            document.getElementById('totalPrice').innerText = "Total: PKR " + total.toLocaleString();
+        }
+
+        function removeItem(index) {
+            let cart = JSON.parse(localStorage.getItem('crochetCart')) || [];
+            cart.splice(index, 1);
+            localStorage.setItem('crochetCart', JSON.stringify(cart));
+            loadCart();
+            location.reload();
+        }
+
+        function clearCart() {
+            if (confirm('Are you sure you want to clear your entire cart?')) {
+                localStorage.clear();
+                location.reload();
+            }
+        }
+
+        window.onload = loadCart;
+    </script>
+
+    <script src="Script.js"></script>
+</body>
+</html>

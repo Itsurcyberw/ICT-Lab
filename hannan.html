@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Abdul Hanan Travel Blog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0d1b2a;
+            color: #e0e0e0;
+        }
+
+        header {
+            background: linear-gradient(to right, #1b4332, #2d6a4f);
+            padding: 50px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 40px;
+            color: #7ed957;
+        }
+
+        header p {
+            font-size: 18px;
+            color: #d8f3dc;
+            margin-top: 10px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .author-box {
+            background: linear-gradient(to right, #1a3a2e, #16502d);
+            padding: 30px;
+            border-radius: 15px;
+            display: flex;
+            gap: 30px;
+            margin-bottom: 40px;
+            border: 2px solid #40916c;
+        }
+
+        .author-box img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 5px solid #7ed957;
+            object-fit: cover;
+        }
+
+        .author-info h2 {
+            color: #7ed957;
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+
+        .author-info p {
+            color: #d8f3dc;
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+
+        .content-area {
+            display: flex;
+            gap: 30px;
+        }
+
+        .article-section {
+            flex: 70%;
+            background-color: #1b3a2f;
+            padding: 30px;
+            border-radius: 15px;
+            border: 2px solid #2d6a4f;
+        }
+
+        .article-section img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border: 3px solid #52b788;
+        }
+
+        .article-section h2 {
+            color: #7ed957;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .article-section p {
+            color: #d8f3dc;
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+
+        .sidebar-section {
+            flex: 30%;
+        }
+
+        .sidebar-card {
+            background: linear-gradient(135deg, #1a3a2e, #16502d);
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            border: 2px solid #40916c;
+        }
+
+        .sidebar-card h3 {
+            color: #7ed957;
+            font-size: 20px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #52b788;
+        }
+
+        .sidebar-card ul {
+            list-style: none;
+        }
+
+        .sidebar-card li {
+            padding: 10px 0;
+            color: #d8f3dc;
+            border-bottom: 1px solid #2d6a4f;
+        }
+
+        .sidebar-card li:hover {
+            color: #95d5b2;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .author-box {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .content-area {
+                flex-direction: column;
+            }
+
+            header h1 {
+                font-size: 26px;
+            }
+
+            .article-section img {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Discovering Pakistan's Hidden Treasures</h1>
+        <p>A Journey Through Mountains, Valleys & Culture</p>
+    </header>
+
+    <div class="container">
+
+        <div class="author-box">
+            <img src="hannan.jpg" alt="Abdul Hanan Sabir">
+            <div class="author-info">
+                <h2>Abdul Hanan Sabir</h2>
+                <p>Travel journalist exploring Pakistan's beautiful landscapes.</p>
+                <p><strong>Location:</strong> Islamabad, Pakistan</p>
+                <p><strong>Experience:</strong> 3 Years in Travel Journalism</p>
+                <p><strong>Contact:</strong> hanan.sabir@email.com</p>
+            </div>
+        </div>
+
+        <div class="content-area">
+
+            <div class="article-section">
+                <img src="https://s2.wklcdn.com/image_192/5787904/106584805/72678806.700x525.jpg" alt="Northern Areas">
+
+                <h2>Exploring Pakistan's Northern Areas</h2>
+
+                <p>Pakistan's Northern Areas are paradise for nature lovers. The Karakoram Range and green valleys offer breathtaking landscapes that amaze every visitor.</p>
+
+                <p>Hunza Valley is stunning with crystal-clear waters and snow-capped peaks. Attabad Lake's turquoise water is unforgettable.</p>
+
+                <p>Skardu is home to K2 and beautiful Sheosar Lake. The Shangrila Resort is known as "Heaven on Earth."</p>
+
+                <p>Naran and Kaghan Valley offer scenic beauty. Lake Saif-ul-Malook at 10,578 feet is surrounded by snow-covered peaks.</p>
+
+                <p>Fairy Meadows at the base of Nanga Parbat offers spectacular views. The green meadows and dense forests attract trekkers worldwide.</p>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-card">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li>Northern Areas</li>
+                        <li>Mountain Adventures</li>
+                        <li>Cultural Heritage</li>
+                        <li>Photography Tips</li>
+                        <li>Travel Guides</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-card">
+                    <h3>Recent Posts</h3>
+                    <ul>
+                        <li>Top 10 Places in Hunza</li>
+                        <li>K2 Base Camp Guide</li>
+                        <li>Best Time to Visit Skardu</li>
+                        <li>Lake Saif-ul-Malook Guide</li>
+                        <li>Fairy Meadows Travel Tips</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
